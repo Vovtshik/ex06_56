@@ -17,7 +17,7 @@ int main()
    
    cout << "Initially count = " << count << endl;
 
-   tripleCallByValue(count)
+   tripleCallByValue(count);
    cout << "After passing count to a function by value;\n"
 	<< "count = " << count << endl << endl;
 
@@ -32,7 +32,7 @@ int main()
 
 void tripleCallByValue(int count_v)
 {
-   coun_v = count_v * 3;
+   count_v = count_v * 3;
 }
 
 void tripleByReference(int& count_r)
