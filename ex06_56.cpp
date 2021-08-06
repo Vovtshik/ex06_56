@@ -10,17 +10,29 @@ int tripleByReference(int&);
 
 int main()
 {
+   int count;
+   
+   cout << "Enter any integer:\n";
+   cin >> count;
+   
+   cout << "Initially count = " << count << endl;
+   cout << "After passing count to a function by value;\n"
+	<< "count = " << count << endl << endl;
+
+   cout << "Initially count = " << count << endl;
+   cout << "After passing count to the function by reference;\n"
+        << "count = " << count << endl << endl;
 
    return 0;
 }
 
-int tripleCallByValue(int count)
+int tripleCallByValue(int count_v)
 {
-   return count * 3;
+   return count_v * 3;
 
 }
 
-int tripleByReference(int& count)
+int tripleByReference(int& count_r)
 {
-   return count * 3;
+   return count_r * 3;
 }
