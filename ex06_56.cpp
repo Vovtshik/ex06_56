@@ -6,7 +6,7 @@ using std::cin;
 using std::endl;
 
 int tripleCallByValue(int)
-int tripleByReference(int);
+int tripleByReference(int&);
 
 int main()
 {
